@@ -1,0 +1,15 @@
+main {
+  width: 50%;
+  margin: 0 auto;
+}
+.code {
+  color: red;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.tech {
+  color: blue;
+  background-color: yellow;
+  font-weight: bold;
+}
