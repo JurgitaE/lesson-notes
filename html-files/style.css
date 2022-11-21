@@ -13,3 +13,7 @@ main {
   background-color: yellow;
   font-weight: bold;
 }
+
+h2 {
+  background-color: rgb(41, 232, 41);
+}
