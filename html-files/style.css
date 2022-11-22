@@ -17,6 +17,7 @@ body::before {
   z-index: -1;
   filter: opacity(20%);
   background-size: cover;
+  background-repeat: repeat;
 }
 .code {
   color: red;
