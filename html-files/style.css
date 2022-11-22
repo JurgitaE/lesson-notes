@@ -9,7 +9,7 @@ main {
 body::before {
   content: "";
   background-image: url("../img/pattern.jpg");
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
