@@ -1,6 +1,22 @@
+body {
+  margin: 0;
+}
 main {
-  width: 50%;
-  margin: 0 auto;
+  width: 800px;
+  margin-left: calc((100% - 800px) / 2);
+  line-height: 1.5;
+}
+body::before {
+  content: "";
+  background-image: url("../img/pattern.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  filter: opacity(20%);
+  background-size: cover;
 }
 .code {
   color: red;
@@ -16,4 +32,10 @@ main {
 
 h2 {
   background-color: rgb(41, 232, 41);
+}
+a {
+  display: block;
+}
+p {
+  text-align: justify;
 }
