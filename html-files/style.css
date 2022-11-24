@@ -1,10 +1,19 @@
-body {
-    margin: 0;
+* {
+    margin: 5px 0;
 }
+
 main {
     width: 800px;
     margin-left: calc((100% - 800px) / 2);
     line-height: 1.2;
+}
+
+.day {
+    margin: 40px 0;
+}
+div,
+p {
+    margin: 10px 0px;
 }
 body::before {
     content: "";
@@ -42,4 +51,11 @@ p {
 }
 .inline {
     display: inline;
+}
+
+.example {
+    font-style: italic;
+    background-color: rgba(0, 0, 255, 0.25);
+    font-size: 14px;
+    line-height: 1;
 }
