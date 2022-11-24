@@ -34,7 +34,7 @@ body::before {
 h2 {
     background-color: rgb(41, 232, 41);
 }
-a {
+.youtube {
     display: block;
 }
 p {
