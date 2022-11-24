@@ -1,27 +1,6 @@
 * {
-    margin: 5px 0;
+    margin: 0;
 }
-
-main {
-    width: 800px;
-    margin-left: calc((100% - 800px) / 2);
-    line-height: 1.2;
-}
-
-.day {
-    margin: 40px 0;
-}
-h1,
-h2,
-div,
-p {
-    margin: 10px 0px;
-}
-
-h2 {
-    background-color: rgb(41, 232, 41);
-}
-
 body::before {
     content: "";
     background-image: url("../img/pattern.jpg");
@@ -35,6 +14,43 @@ body::before {
     background-size: cover;
     background-repeat: repeat;
 }
+
+nav,
+main {
+    width: 800px;
+    margin-left: calc((100% - 800px) / 2);
+    line-height: 1.2;
+    display: inline-block;
+}
+nav {
+    background-color: blue;
+}
+.main-navigation > a {
+    float: right;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px 15px;
+    margin: 10px 5px;
+    border-radius: 0.7em;
+}
+
+.day {
+    margin: 30px 0;
+}
+
+h1,
+h2,
+div,
+p {
+    margin: 10px 0px;
+}
+
+h2 {
+    background-color: blue;
+    color: whitesmoke;
+}
+
 .code {
     color: red;
     background-color: yellow;
