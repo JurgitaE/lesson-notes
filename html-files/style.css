@@ -11,10 +11,17 @@ main {
 .day {
     margin: 40px 0;
 }
+h1,
+h2,
 div,
 p {
     margin: 10px 0px;
 }
+
+h2 {
+    background-color: rgb(41, 232, 41);
+}
+
 body::before {
     content: "";
     background-image: url("../img/pattern.jpg");
@@ -40,11 +47,14 @@ body::before {
     font-weight: bold;
 }
 
-h2 {
-    background-color: rgb(41, 232, 41);
-}
 .youtube {
-    display: block;
+    display: inline-block;
+    color: white;
+    background-color: blue;
+    padding: 5px 15px;
+    margin: 10px 5px;
+    border-radius: 0.7em;
+    text-decoration: none;
 }
 p {
     text-align: justify;
