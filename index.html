@@ -191,7 +191,7 @@
                 </div>
                 <!-- 2022-11-23 -->
                 <div class="day">
-                    <h2>2022-11-23</h2>
+                    <h2>2022-11-23 - NAV styling with CSS</h2>
                     <a
                         href="https://www.youtube.com/watch?v=Hr40BLgOxGw"
                         target="_blank"
@@ -219,11 +219,18 @@
                         ;
                     </p>
                     <p>
-                        To use <strong>em</strong> instead of pixels, font-size must be
-                        set. Pay attention, that
-                        <strong>line-height default is 1.2</strong> of font-size.
-                        Therefore, set line-height same as font-size to have better
-                        control over vertical spacing.
+                        To use <strong>em</strong> instead of px, font-size must be set.
+                        Pay attention, that <strong>line-height default is 1.2</strong> of
+                        font-size. Therefore, set line-height same as font-size to have
+                        better control over vertical spacing in nav.
+                        <strong>
+                            font-size and line-height should ALWAYS be paired to prevent
+                            distortion when browsers change default line-height
+                        </strong>
+                        . <br />
+                        When font-size of the element is set, it makes sense to set all
+                        other property values in em so that sizing changes proportionally
+                        all the time by changing only one value (font-size).
                     </p>
                     <p>Useful links:</p>
                     <ul>
@@ -242,10 +249,9 @@
                         </li>
                     </ul>
                     <p>
-                        NOTES: <br />
                         You can find actual font-family font applied by selecting an
-                        element and going to Computed styles (bottom line 'Rendered
-                        Fonts').
+                        element and going to Computed styles (bottom line
+                        <strong>'Rendered Fonts'</strong> ).
                     </p>
                 </div>
                 <!-- 2022-11-24 -->
