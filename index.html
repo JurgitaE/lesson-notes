@@ -108,7 +108,6 @@
                         </span>
                     </p>
                 </div>
-
                 <!-- 2022-11-22 -->
                 <div class="day">
                     <h2>2022-11-22 - favicon, styling</h2>
@@ -191,22 +190,56 @@
                     </p>
                 </div>
                 <!-- 2022-11-23 -->
-                <h2>2022-11-23</h2>
-                <div>
-                    <a href="https://www.youtube.com/watch?v=Hr40BLgOxGw" target="_blank"
-                        >Youtube video part 1</a
-                    >
-                    <a href="https://www.youtube.com/watch?v=1u9Crr9MxEA" target="_blank"
-                        >Youtube video part 2
+                <div class="day">
+                    <h2>2022-11-23 - NAV styling with CSS</h2>
+                    <a
+                        href="https://www.youtube.com/watch?v=Hr40BLgOxGw"
+                        target="_blank"
+                        class="youtube">
+                        Youtube video part 1
                     </a>
+                    <a
+                        href="https://www.youtube.com/watch?v=1u9Crr9MxEA"
+                        target="_blank"
+                        class="youtube">
+                        Youtube video part 2
+                    </a>
+                    <p>
+                        All text properties are inherited (with several exceptions., e.g.
+                        anchor tag). Therefore set font-family on body tag. <br />
+                        If border is needed around element on hover, put transparent
+                        border on static element as well so thet it will not influence
+                        position of other elements when hovering.
+                    </p>
+                    <p>
+                        <span class="tech">CSS</span>:
+                        <span class="code"
+                            >box-shadow: offset-x offset-y blur-radius spread-radius color
+                        </span>
+                        ;
+                    </p>
+                    <p>
+                        To use <strong>em</strong> instead of px, font-size must be set.
+                        Pay attention, that <strong>line-height default is 1.2</strong> of
+                        font-size. Therefore, set line-height same as font-size to have
+                        better control over vertical spacing in nav.
+                        <strong>
+                            font-size and line-height should ALWAYS be paired to prevent
+                            distortion when browsers change default line-height
+                        </strong>
+                        . <br />
+                        When font-size of the element is set, it makes sense to set all
+                        other property values in em so that sizing changes proportionally
+                        all the time by changing only one value (font-size).
+                    </p>
                     <p>Useful links:</p>
                     <ul>
                         <li>
                             <a
                                 class="inline"
                                 href="https://fontawesome.com/v4/get-started/"
-                                >Font Awesome</a
-                            >
+                                >Font Awesome
+                            </a>
                             - only css and font folders needed.
                         </li>
                         <li>
@@ -216,37 +249,32 @@
                         </li>
                     </ul>
                     <p>
-                        NOTES: <br />
                         You can find actual font-family font applied by selecting an
-                        element and going to Computed styles (bottom line 'Rendered
-                        Fonts').
+                        element and going to Computed styles (bottom line
+                        <strong>'Rendered Fonts'</strong> ).
                     </p>
-                    <!-- 2022-11-24 -->
-                    <div>
-                        <h2>2022-11-24</h2>
-                        <a
-                            href="https://www.youtube.com/watch?v=UYpCK1QN06w"
-                            target="_blank"
-                            >Youtube video part 1
-                        </a>
-                        <a
-                            href="https://www.youtube.com/watch?v=wZG16b3Ql8s"
-                            target="_blank"
-                            >Youtube video part 2</a
-                        >
-                        <p>
-                            Changing <span class="tech">package.json</span> author and
-                            licence defaults:
-                            <a
-                                class="inline"
-                                href="https://jaketrent.com/post/change-default-npm-license/"
-                                >Change Default NPM License</a
-                            >.
-                        </p>
-                    </div>
-
-                    <p></p>
                 </div>
+                <!-- 2022-11-24 -->
+                <div>
+                    <h2>2022-11-24</h2>
+                    <a href="https://www.youtube.com/watch?v=UYpCK1QN06w" target="_blank"
+                        >Youtube video part 1
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=wZG16b3Ql8s" target="_blank"
+                        >Youtube video part 2</a
+                    >
+                    <p>
+                        Changing <span class="tech">package.json</span> author and licence
+                        defaults:
+                        <a
+                            class="inline"
+                            href="https://jaketrent.com/post/change-default-npm-license/"
+                            >Change Default NPM License
+                        </a>
+                        .
+                    </p>
+                </div>
+                <p></p>
             </div>
         </main>
     </body>
