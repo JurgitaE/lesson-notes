@@ -84,3 +84,6 @@ p {
     font-size: 14px;
     line-height: 1;
 }
+.example ul {
+    list-style: none;
+}
