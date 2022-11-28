@@ -256,7 +256,7 @@
                                 target="_blank">
                                 Font Awesome
                             </a>
-                            - only <strong>css and font folders</strong> are needed.
+                            - only <strong>css and fonts folders</strong> are needed.
                         </li>
                         <li>
                             <a href="https://github.com/marketplace/imgbot"> Imgbot </a>
@@ -270,7 +270,7 @@
                 </div>
                 <!-- 2022-11-24 -->
                 <div class="day">
-                    <h2>2022-11-24 - Font Awesome, CSS classes</h2>
+                    <h2>2022-11-24 - Font Awesome, CSS classes, custom properties</h2>
                     <a
                         class="youtube"
                         href="https://www.youtube.com/watch?v=UYpCK1QN06w"
@@ -299,6 +299,28 @@
                         changing html structure you won't need to change styling, because
                         classes remain same.
                     </p>
+                    <p>
+                        <strong>FontAwesome</strong> is based on classes ('fa
+                        fa-iconName'). FontAwesome classes are 'described' in css folder
+                        font-awesome.css and font-awesome.min.css files. Only
+                        <strong>font-awesome.min.css</strong> file is needed and linked to
+                        HTML file. You can merge FontAwesome icons with anchor tags, by
+                        putting FontAwesome classes ('fa fa-iconName') into anchor tag and
+                        deleting icon tags.
+                    </p>
+                    <p>Third party styles should be linked before our own css.</p>
+                    <p>
+                        <span class="tech">CSS custom properties</span> :
+                        <span class="code">
+                            <br />
+                            :root { <br />
+                            --main-color: #1f4d14;
+                            <br />
+                            }
+                        </span>
+                    </p>
+                    To use custom properties in styling use
+                    <span class="code"> var(propertName)</span> (e.g. var(--main-color)).
                 </div>
             </div>
         </main>
