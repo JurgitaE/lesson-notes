@@ -1,7 +1,10 @@
-* {
+body *,
+body {
     margin: 0;
+    box-sizing: border-box;
 }
-body::before {
+
+/* body::before {
     content: "";
     background-image: url("../img/pattern.jpg");
     position: fixed;
@@ -13,10 +16,9 @@ body::before {
     filter: opacity(20%);
     background-size: cover;
     background-repeat: repeat;
-}
+} */
 
-nav,
-main {
+.container {
     width: 800px;
     margin-left: calc((100% - 800px) / 2);
     line-height: 1.2;
@@ -86,4 +88,15 @@ p {
 }
 .example ul {
     list-style: none;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    img {
+        width: 100%;
+    }
 }
