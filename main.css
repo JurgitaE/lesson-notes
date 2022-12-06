@@ -1,7 +1,11 @@
 h1 {
-  display: inline-block;
+    display: inline-block;
 }
 sup {
-  font-size: 10px;
-  color: grey;
+    font-size: 10px;
+    color: grey;
 }
+main {
+    position: relative;
+}
+
