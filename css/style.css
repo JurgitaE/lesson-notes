@@ -1,6 +1,10 @@
 :root {
     --main-width: 800px;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 body *,
 body {
     margin: 0;
@@ -103,15 +107,12 @@ p {
     box-shadow: 0 3px 6px #0005;
 }
 
-
 @media (max-width: 900px) {
     .back-to-top {
         background-color: #dc143c55;
         right: 0;
         transform: translateX(-50%);
-        
     }
-    
 }
 @media (max-width: 800px) {
     .container {
@@ -122,5 +123,4 @@ p {
     img {
         width: 100%;
     }
-   
 }
