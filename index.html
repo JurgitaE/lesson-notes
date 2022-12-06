@@ -21,6 +21,7 @@
             href="./favicon/favicon-16x16.png" />
         <link rel="manifest" href="./favicon/site.webmanifest" />
         <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="stylesheet" href="./css/font-awesome.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Class Notes</title>
     </head>
@@ -506,12 +507,161 @@
                         end classes is a must).
                     </p>
                 </div>
+                <div class="day">
+                    <h3>
+                        2022-12-05 - setting margin/padding values, variables, colors(hsv,
+                        rgb, hex)
+                    </h3>
+                    <a
+                        class="youtube"
+                        href="https://www.youtube.com/watch?v=BMGtTIqokPs"
+                        target="_blank"
+                        >Youtube video part 1
+                    </a>
+                    <a
+                        class="youtube"
+                        href="https://www.youtube.com/watch?v=Y8pDQcJixAM"
+                        target="_blank"
+                        >Youtube video part 2
+                    </a>
+                </div>
+                <div class="day">
+                    <h3>
+                        2022-12-06 - background-image, background properties,
+                        min-height/max-height, background-attachment, scroll to top,
+                        @keyframes, transform: translate
+                    </h3>
+                    <a
+                        class="youtube"
+                        href="https://www.youtube.com/watch?v=g979KFS-rcY&list=PLcLHBZr0jPABsCuLBXBpEiOZ12PWM99rr&index=25"
+                        target="_blank"
+                        >Youtube video part 1
+                    </a>
+                    <a
+                        class="youtube"
+                        href="https://www.youtube.com/watch?v=iRywr97-jdw"
+                        target="_blank"
+                        >Youtube video part 2
+                    </a>
+                    <p>
+                        The <span class="code">background-image</span> property sets one
+                        or more background images on an element.
+                        <span class="code">background-color</span> must be also indicated
+                        in case the image is no longer available.
+                    </p>
+                    <p>
+                        <span class="code">background-repeat</span> CSS property sets how
+                        background images are repeated. Values:
+                        <strong>repeat, no-repeat, repeat-x, repeat-y</strong>.
+                    </p>
+                    <p>
+                        <span class="code">background-position</span> CSS property sets
+                        the initial position for each background image. Values:
+                        <strong>
+                            top, bottom, left, right, center, top left, top right and etc.
+                        </strong>
+                        . It can be also set as % values.
+                    </p>
+                    <p>
+                        <span class="code">background-size</span> roperty sets the size of
+                        the element's background image. The image can be left to its
+                        natural size, stretched, or constrained to fit the available
+                        space. Values: <strong> auto (default), contain, cover</strong>.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <span class="code">vmin</span> is the
+                            <strong>
+                                minimum between the viewport's height or width
+                            </strong>
+                            in percentage depending on which is smaller.
+                        </li>
+                        <li>
+                            <span class="code">vmax</span> is the
+                            <strong
+                                >maximum between the viewport's height or width
+                            </strong>
+                            in percentage depending on which is bigger.
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Important:</strong> % and vw difference is that, % does
+                        not take scroll into account, while vw does (therefore bottom
+                        scroll might occur).
+                    </p>
+                    <p>
+                        <span class="code">background-attachment</span> CSS property sets
+                        whether a background image's position is fixed within the
+                        viewport, or scrolls with its containing block. Values:
+                        <strong>
+                            scroll (fixed relative to the element itself), fixed (relative
+                            to viewport) </strong
+                        >. Can be used for hero parallax.
+                    </p>
+
+                    <div class="example">
+                        <p>Example of back-to-top 'button':</p>
+                        <p>
+                            &lt; a href="#" class="fa fa-angle-up back-to-top" &gt; &lt/a
+                            &gt;
+                        </p>
+                        <p>.back-to-top {</p>
+                        <ul>
+                            <li>background-color: var(--secondary-color);</li>
+                            <li>width: 50px;</li>
+                            <li>height: 50px;</li>
+                            <li>border-radius: 50%;</li>
+                            <li>position: absolute;</li>
+                            <li>top: -30px;</li>
+                            <li>right: -15px;</li>
+                            <li>color: #fff;</li>
+                            <li>font-size: 30px;</li>
+                            <li>text-align: center;</li>
+                            <li>line-height: 50px;</li>
+                            <li>text-decoration: none;</li>
+                            <li>transition: all 0.5s;</li>
+                        </ul>
+                        <p>}</p>
+                        <p>
+                            Set <span class="code">scroll-behavior: smooth;</span> for
+                            'html' tag.
+                        </p>
+                    </div>
+                    <p>
+                        <span class="code">@keyframes identifier { }</span>
+                        controls the intermediate steps in a CSS animation sequence by
+                        defining styles for keyframes (or waypoints) along the animation
+                        sequence. Animated element must have at least
+                        <span class="code">animation-name</span> (includes keyframes
+                        identifier) and <span class="code">animation-duration</span>.
+                        <span class="code">animation-iteration-count</span> indicates how
+                        many times animation should be played.
+                        <span class="code">animation-delay</span> is used before animation
+                        starts, but not for every iteration. For iterations to delay e.g.
+                        at the beginning, include two breakpoins in keyframes with same
+                        properties - this will delay indicated % of the breakpoint *total
+                        duration time.
+                    </p>
+                    <p>
+                        <span class="code">transform: translate() </span> CSS function
+                        repositions an element in the horizontal and/or vertical
+                        directions relative to 'itself'. Possible values:
+                        <strong>translate(), translateX(), translateY()</strong>
+                    </p>
+
+                    <!-- 
+
+ -->
+                </div>
             </div>
 
+            <a href="#" class="fa fa-angle-up back-to-top"></a>
+
             <!-- week template 
-            <div class="week">
-                <header>
-                    <h2>
+                <div class="week">
+                    <header>
+                        <h2>
                         <a
                             href="#"
                             target="_blank"
