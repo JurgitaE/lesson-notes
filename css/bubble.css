@@ -1,0 +1,37 @@
+.bubble {
+    --w: 100px;
+    height: var(--w);
+    width: var(--w);
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    display: none;
+}
+
+.bubble.smile {
+    position: absolute;
+    --w: 30px;
+    height: var(--w);
+    width: var(--w);
+    border-radius: 10%;
+    --h: 100px;
+    background-color: none;
+    border-bottom: 2px solid red;
+    top: calc(var(--h) / 2);
+    left: calc(var(--h) / 2);
+    transform: translate(-50%, -50%);
+    animation-name: smile;
+    /* animation-iteration-count: infinite; */
+    animation-duration: 5s;
+}
+
+@keyframes smile {
+    0% {
+        border-bottom: 2px solid red;
+        --w: 30px;
+    }
+    100% {
+        /* border-bottom: 10px solid red; */
+        border-radius: 50%;
+    }
+}
