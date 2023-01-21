@@ -21,7 +21,7 @@ nav {
     background-color: blue;
 }
 .main-navigation > a {
-    float: right;
+    float: left;
     text-decoration: none;
     color: black;
     background-color: white;
